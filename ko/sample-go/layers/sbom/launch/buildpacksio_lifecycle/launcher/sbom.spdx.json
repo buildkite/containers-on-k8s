@@ -1,0 +1,466 @@
+{
+ "spdxVersion": "SPDX-2.3",
+ "dataLicense": "CC0-1.0",
+ "SPDXID": "SPDXRef-DOCUMENT",
+ "name": "launcher",
+ "documentNamespace": "https://anchore.com/syft/file/launcher-096206e9-c609-46fe-b8c5-1b4f40030400",
+ "creationInfo": {
+  "licenseListVersion": "3.22",
+  "creators": [
+   "Organization: Anchore, Inc",
+   "Tool: syft-0.93.0"
+  ],
+  "created": "2023-10-18T15:36:36Z"
+ },
+ "packages": [
+  {
+   "name": "github.com/BurntSushi/toml",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-BurntSushi-toml-993e76bb1ad7efdd",
+   "versionInfo": "v1.3.2",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA256",
+     "checksumValue": "a3b2212e6d0cb31dc1681fa7dc083b2fc115941c869e9ab5e02e185a2bbf80bf"
+    }
+   ],
+   "sourceInfo": "acquired package info from go module information: /launcher",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:BurntSushi:toml:v1.3.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/BurntSushi/toml@v1.3.2"
+    }
+   ]
+  },
+  {
+   "name": "github.com/apex/log",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-apex-log-0e34eae5ba650963",
+   "versionInfo": "v1.9.0",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA256",
+     "checksumValue": "147b70ff1b9a33c0209af0c34c8f5f8b0a002f6e52ab6731a239d9202514f25d"
+    }
+   ],
+   "sourceInfo": "acquired package info from go module information: /launcher",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apex:log:v1.9.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/apex/log@v1.9.0"
+    }
+   ]
+  },
+  {
+   "name": "github.com/buildpacks/lifecycle",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-buildpacks-lifecycle-96d6a60b274e234f",
+   "versionInfo": "v0.17.2",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "sourceInfo": "acquired package info from go module information: /launcher",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:buildpacks:lifecycle:v0.17.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/buildpacks/lifecycle@v0.17.2"
+    }
+   ]
+  },
+  {
+   "name": "github.com/google/go-cmp",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-google-go-cmp-7526b52fd71b65c4",
+   "versionInfo": "v0.5.9",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA256",
+     "checksumValue": "3b64dfab9aa0e2a738026c1596fbf4a0b89500607b7a7052276c760ea4058b7f"
+    }
+   ],
+   "sourceInfo": "acquired package info from go module information: /launcher",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:google:go-cmp:v0.5.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:google:go_cmp:v0.5.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/google/go-cmp@v0.5.9"
+    }
+   ]
+  },
+  {
+   "name": "github.com/heroku/color",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-heroku-color-aa1dd8a25d07d7a3",
+   "versionInfo": "v0.0.6",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA256",
+     "checksumValue": "51314532b98c2c570bdcec1ea8fd6501da7c8b5cbff681ea91e1e343f6ff372d"
+    }
+   ],
+   "sourceInfo": "acquired package info from go module information: /launcher",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:heroku:color:v0.0.6:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/heroku/color@v0.0.6"
+    }
+   ]
+  },
+  {
+   "name": "github.com/mattn/go-colorable",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-mattn-go-colorable-fd9dc49308b91899",
+   "versionInfo": "v0.1.13",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA256",
+     "checksumValue": "7c5038599c5d105e2d5cf65528c2f00fca149c24d3a34f1db94ef0c5e71d12f0"
+    }
+   ],
+   "sourceInfo": "acquired package info from go module information: /launcher",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:mattn:go-colorable:v0.1.13:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:mattn:go_colorable:v0.1.13:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/mattn/go-colorable@v0.1.13"
+    }
+   ]
+  },
+  {
+   "name": "github.com/mattn/go-isatty",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-mattn-go-isatty-14244bdf8f2b1746",
+   "versionInfo": "v0.0.19",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA256",
+     "checksumValue": "2484ee6d07f430e2dd94646e46afa3b6c0e57a47583e26bd645b01f21fc03cf0"
+    }
+   ],
+   "sourceInfo": "acquired package info from go module information: /launcher",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:mattn:go-isatty:v0.0.19:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:mattn:go_isatty:v0.0.19:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/mattn/go-isatty@v0.0.19"
+    }
+   ]
+  },
+  {
+   "name": "github.com/pkg/errors",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-pkg-errors-31f68bba25e8ea11",
+   "versionInfo": "v0.9.1",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA256",
+     "checksumValue": "14404bc75cd2db5e28c298f2eeab017a2c5b51192e850030acae54c0b193c2de"
+    }
+   ],
+   "sourceInfo": "acquired package info from go module information: /launcher",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:pkg:errors:v0.9.1:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/pkg/errors@v0.9.1"
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/sys",
+   "SPDXID": "SPDXRef-Package-go-module-golang.org-x-sys-ec2f2d8bd9a99466",
+   "versionInfo": "v0.13.0",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA256",
+     "checksumValue": "01ff2728f9ae172a625018d5a14f55db41626855ce72e648db5a74c9c5586061"
+    }
+   ],
+   "sourceInfo": "acquired package info from go module information: /launcher",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:x\\/sys:v0.13.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/sys@v0.13.0"
+    }
+   ]
+  },
+  {
+   "name": "stdlib",
+   "SPDXID": "SPDXRef-Package-go-module-stdlib-0379c89d878a47ab",
+   "versionInfo": "go1.20.10",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "sourceInfo": "acquired package info from go module information: /launcher",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:go:1.20.10:-:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/stdlib@1.20.10"
+    }
+   ]
+  },
+  {
+   "name": "launcher",
+   "SPDXID": "SPDXRef-DocumentRoot-File-launcher",
+   "versionInfo": "sha256:sha256:e33b471c53b5fbc315cf11f3b17cc18ac5003e11aef4f7700be1cdefe23b3f9a",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA256",
+     "checksumValue": "e33b471c53b5fbc315cf11f3b17cc18ac5003e11aef4f7700be1cdefe23b3f9a"
+    }
+   ],
+   "primaryPackagePurpose": "FILE"
+  }
+ ],
+ "files": [
+  {
+   "fileName": "/launcher",
+   "SPDXID": "SPDXRef-File-launcher-361242815a383bec",
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "0000000000000000000000000000000000000000"
+    }
+   ],
+   "licenseConcluded": "NOASSERTION",
+   "copyrightText": ""
+  }
+ ],
+ "relationships": [
+  {
+   "spdxElementId": "SPDXRef-Package-go-module-stdlib-0379c89d878a47ab",
+   "relatedSpdxElement": "SPDXRef-File-launcher-361242815a383bec",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-go-module-github.com-apex-log-0e34eae5ba650963",
+   "relatedSpdxElement": "SPDXRef-File-launcher-361242815a383bec",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-go-module-github.com-mattn-go-isatty-14244bdf8f2b1746",
+   "relatedSpdxElement": "SPDXRef-File-launcher-361242815a383bec",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-go-module-github.com-pkg-errors-31f68bba25e8ea11",
+   "relatedSpdxElement": "SPDXRef-File-launcher-361242815a383bec",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-go-module-github.com-google-go-cmp-7526b52fd71b65c4",
+   "relatedSpdxElement": "SPDXRef-File-launcher-361242815a383bec",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-go-module-github.com-buildpacks-lifecycle-96d6a60b274e234f",
+   "relatedSpdxElement": "SPDXRef-File-launcher-361242815a383bec",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-go-module-github.com-BurntSushi-toml-993e76bb1ad7efdd",
+   "relatedSpdxElement": "SPDXRef-File-launcher-361242815a383bec",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-go-module-github.com-heroku-color-aa1dd8a25d07d7a3",
+   "relatedSpdxElement": "SPDXRef-File-launcher-361242815a383bec",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-go-module-golang.org-x-sys-ec2f2d8bd9a99466",
+   "relatedSpdxElement": "SPDXRef-File-launcher-361242815a383bec",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-go-module-github.com-mattn-go-colorable-fd9dc49308b91899",
+   "relatedSpdxElement": "SPDXRef-File-launcher-361242815a383bec",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-launcher",
+   "relatedSpdxElement": "SPDXRef-Package-go-module-github.com-BurntSushi-toml-993e76bb1ad7efdd",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-launcher",
+   "relatedSpdxElement": "SPDXRef-Package-go-module-github.com-apex-log-0e34eae5ba650963",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-launcher",
+   "relatedSpdxElement": "SPDXRef-Package-go-module-github.com-buildpacks-lifecycle-96d6a60b274e234f",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-launcher",
+   "relatedSpdxElement": "SPDXRef-Package-go-module-github.com-google-go-cmp-7526b52fd71b65c4",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-launcher",
+   "relatedSpdxElement": "SPDXRef-Package-go-module-github.com-heroku-color-aa1dd8a25d07d7a3",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-launcher",
+   "relatedSpdxElement": "SPDXRef-Package-go-module-github.com-mattn-go-colorable-fd9dc49308b91899",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-launcher",
+   "relatedSpdxElement": "SPDXRef-Package-go-module-github.com-mattn-go-isatty-14244bdf8f2b1746",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-launcher",
+   "relatedSpdxElement": "SPDXRef-Package-go-module-github.com-pkg-errors-31f68bba25e8ea11",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-launcher",
+   "relatedSpdxElement": "SPDXRef-Package-go-module-golang.org-x-sys-ec2f2d8bd9a99466",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-launcher",
+   "relatedSpdxElement": "SPDXRef-Package-go-module-stdlib-0379c89d878a47ab",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DOCUMENT",
+   "relatedSpdxElement": "SPDXRef-DocumentRoot-File-launcher",
+   "relationshipType": "DESCRIBES"
+  }
+ ]
+}
