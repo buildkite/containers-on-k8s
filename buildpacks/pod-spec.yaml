@@ -1,0 +1,18 @@
+containers:
+- name: creator
+ image: BUILDER_IMAGE
+ imagePullPolicy: Always
+ command: ["/cnb/lifecycle/creator"]
+ args:
+   - "-app=/app"
+   - "-layers=/layers"
+   - "-run-image=MY_OUTPUT_IMAGE"
+   - "-cache-dir=/cache"
+ volumeMounts:
+   - name: layers-dir
+     mountPath: /layers
+   - name: app-dir
+     mountPath: /app
+   - name: cache-dir
+     mountPath: /cache
+
