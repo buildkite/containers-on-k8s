@@ -1,4 +1,3 @@
-// +heroku goVersion go1.14
-module github.com/GoogleCloudPlatform/buildpack-samples/sample-go
+module github.com/superorbital/my-app
 
-go 1.14
+go 1.21
