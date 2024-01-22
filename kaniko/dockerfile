@@ -1,2 +1,2 @@
 FROM ubuntu
-ENTRYPOINT ["/bin/bash", "-c", "echo Greetings to all you people"]
+ENTRYPOINT ["/bin/bash", "-c", "echo Salutations to you humans and robots!"]
