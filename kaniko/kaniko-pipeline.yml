@@ -1,0 +1,29 @@
+steps:
+- label: "Test kaniko image build and push"
+  agents:
+    queue: kubetest
+  plugins:
+    - kubernetes:
+        gitEnvFrom:
+          - secretRef: { name: cicd-user-git-ssh-keys }
+        podSpec:
+          containers:
+            - name: kaniko
+              image: gcr.io/kaniko-project/executor:debug
+              command: 
+              - executor
+              args: ["--dockerfile=/workspace/build/buildkite/demo/kaniko-test/kaniko/dockerfile",
+                     "--context=dir://workspace/build/buildkite/demo/kaniko-test/kaniko",
+                     "--destination=buckyerdockyer/kaniko-test"]
+              volumeMounts:
+                - name: kaniko-secret
+                  mountPath: /kaniko/.docker
+          restartPolicy: Never
+          volumes:
+            - name: kaniko-secret
+              secret:
+                secretName: regcred
+                items:
+                  - key: .dockerconfigjson
+                    path: config.json
+          serviceAccountName: cicd-user

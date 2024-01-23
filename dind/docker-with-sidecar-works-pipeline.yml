@@ -1,0 +1,36 @@
+steps:
+- label: "Testing the sidecar approach"
+  agents:
+    queue: kubetest
+  plugins:
+    - kubernetes:
+        sidecars:
+        - image: docker:dind
+          command: [dockerd-entrypoint.sh]
+          env:
+            - name: DOCKER_TLS_CERTDIR
+              value: ""
+          volumeMounts:
+            - mountPath: /var/run/
+              name: docker-sock
+          securityContext:
+            privileged: true
+            allowPrivilegeEscalation: true
+        mirrorVolumeMounts: true # CRITICAL: this must be at the same indentation level as sidecars XD
+        gitEnvFrom:
+          - secretRef: { name: cicd-user-git-ssh-keys }
+        podSpec:
+          containers:
+            - image: alpine/docker-with-buildx:latest
+              volumeMounts:
+                - mountPath: /var/run/
+                  name: docker-sock
+              command: [docker]
+              args: ["build", "./dind", "-t sometag/bar"]
+              resources:
+                limits:
+                  cpu: "100m"
+                  memory: "128Mi"
+          volumes:
+          - name: docker-sock
+            emptyDir: {}
