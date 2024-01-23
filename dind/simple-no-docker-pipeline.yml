@@ -1,0 +1,17 @@
+steps:
+- label: "My Dearest Pipeline"
+  agents:
+    queue: kubetest
+  plugins:
+    - kubernetes:
+        gitEnvFrom:
+          - secretRef: { name: cicd-user-git-ssh-keys }
+        podSpec:
+          containers:
+            - image: alpine/docker-with-buildx:latest
+              command: [ls]
+              args: ["-lart"]
+              resources:
+                limits:
+                  cpu: "100m"
+                  memory: "128Mi"
