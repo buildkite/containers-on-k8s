@@ -10,11 +10,11 @@ steps:
           containers:
             - name: kaniko
               image: gcr.io/kaniko-project/executor:debug
-              command:
+              command: 
               - executor
-              args: ["--dockerfile=/workspace/dockerfile",
-                     "--context=dir://workspace",
-                     "--destination=buckyerdockyer/kaniko-test"] # replace with your dockerhub account
+              args: ["--dockerfile=/workspace/build/buildkite/demo/kaniko-test/kaniko/dockerfile",
+                     "--context=dir://workspace/build/buildkite/demo/kaniko-test/kaniko",
+                     "--destination=buckyerdockyer/kaniko-test"]
               volumeMounts:
                 - name: kaniko-secret
                   mountPath: /kaniko/.docker
@@ -26,7 +26,4 @@ steps:
                 items:
                   - key: .dockerconfigjson
                     path: config.json
-            - name: dockerfile-storage
-              persistentVolumeClaim:
-                claimName: dockerfile-claim
           serviceAccountName: cicd-user
